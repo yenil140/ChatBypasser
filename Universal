@@ -1,5 +1,7 @@
 -- Made by ArasOfficial#8439
 
+
+
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 local Bypasses = {
@@ -170,6 +172,30 @@ local MyButton = Page1.Button({
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
 		Remote:FireServer("I'll ra{{asdasdasd:pe}} your mom. ng", "All")
+	end
+})
+
+local MyButton = Page1.Button({
+	Text = "Bitch",
+	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Bit{{asdasdasd:ch}}! ng", "All")
+	end
+})
+
+local MyButton = Page1.Button({
+	Text = "Bitches",
+	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Bit{{asdasdasd:ches}}! ng", "All")
+	end
+})
+
+local MyButton = Page1.Button({
+	Text = "Fuck You",
+	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Fu{{asdasdasd:ck}} You! ng", "All")
 	end
 })
 
@@ -467,7 +493,15 @@ local MyButton = Page1.Button({
 	Text = "Kike",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("Ki{{asdasdasd:ke}}. ng", "All")
+	end
+})
+
+local MyButton = Page1.Button({
+	Text = "Kys",
+	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("K{{asdasdasd:ys}}. ng", "All")
 	end
 })
 
@@ -475,7 +509,7 @@ local MyButton = Page1.Button({
 	Text = "Cock",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("Co{{asdasdasd:ck}}. ng", "All")
 	end
 })
 
@@ -483,7 +517,7 @@ local MyButton = Page1.Button({
 	Text = "Ass",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("as{{axdaxdaxd:s}}. ng", "All")
 	end
 })
 
@@ -491,7 +525,7 @@ local MyButton = Page1.Button({
 	Text = "Asshole",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("As{{asdasdasd:shole}}. ng", "All")
 	end
 })
 
@@ -499,7 +533,7 @@ local MyButton = Page1.Button({
 	Text = "Faggot",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("Fa{{asdasdasd:ggot}}. ng", "All")
 	end
 })
 
@@ -507,7 +541,7 @@ local MyButton = Page1.Button({
 	Text = "Queer",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("Qu{{asdasdasd:eer}}. ng", "All")
 	end
 })
 
@@ -515,7 +549,7 @@ local MyButton = Page1.Button({
 	Text = "Penis",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("Pe{{asdasdasd:nis}}. ng", "All")
 	end
 })
 
@@ -523,7 +557,7 @@ local MyButton = Page1.Button({
 	Text = "Sperm",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("Sper{{asdasdasd:m}}. ng", "All")
 	end
 })
 
@@ -531,7 +565,7 @@ local MyButton = Page1.Button({
 	Text = "Whore",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("Who{{asdasdasd:re}}. ng", "All")
 	end
 })
 
@@ -539,7 +573,7 @@ local MyButton = Page1.Button({
 	Text = "Naked",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("Na{{asdasdasd:ked}}. ng", "All")
 	end
 })
 
@@ -547,7 +581,7 @@ local MyButton = Page1.Button({
 	Text = "Dyke",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("Dy{{asdasdasd:ke}}. ng", "All")
 	end
 })
 
@@ -602,7 +636,7 @@ local MyTextField = Page3.TextField({
 	end
 })
 
-local MyButton = Page1.Button({
+local MyButton = Page3.Button({
 	Text = "Shed's Bypasser",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
