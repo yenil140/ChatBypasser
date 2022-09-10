@@ -1,11 +1,9 @@
 -- Made by ArasOfficial#8439
 
--- NOTE: This script is not complated!
-
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 local Bypasses = {
-	["ass"] = "as{{asdasdasd:s}}",
+	["ass"] = "as{{axdaxdaxd:s}}",
 	["asshole"] = "as{{asdasdasd:shole}}",
 	["bitch"] = "bit{{asdasdasd:ch}}",
 	["cock"] = "co{{asdasdasd:ck}}",
@@ -40,7 +38,7 @@ local Bypasses = {
 	["queer"] = "qu{{asdasdasd:eer}}",
 	["boob"] = "boo{{asdasdasd:b}}",
 	["boobs"] = "boo{{asdasdasd:bs}}",
-	["gay"] = "g{{asdasdasd:ay}}",
+	["gay"] = "g{{axdaxdaxd:ay}}",
 	["fucked"] = "fu{{asdasdasd:cked}}",
 	["fucking"] = "fvc{{asdasdasd:king}}",
 	["cum"] = "cu{{asdasdasd:m}}",
@@ -57,6 +55,8 @@ local Bypasses = {
 	["fanny"] = "fan{{asdasdasd:ny}}",
 	["fuckwit"] = "fvc{{asdasdasd:kwit}}",
 	["dating"] = "dat{{asdasdasd:ing}}",
+	["porn"] = "po{{asdasdasd:rn}}",
+	["smack"] = "sm{{asdasdasd:ack}}"
 }
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -109,6 +109,10 @@ local Page1 = X.New({
 
 local Page2 = X.New({
 	Title = "Settings"
+})
+
+local Page3 = X.New({
+	Title = "Others"
 })
 
 local MyButton = Page1.Button({
@@ -165,7 +169,7 @@ local MyButton = Page1.Button({
 	Text = "I'll rape your mom",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("I'll ra{{asdasdasd:pe}} your mom. ng. ng", "All")
+		Remote:FireServer("I'll ra{{asdasdasd:pe}} your mom. ng", "All")
 	end
 })
 
@@ -318,7 +322,7 @@ local MyButton = Page1.Button({
 	Text = "Porn",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("Po{{asdasdasd:rn}}. ng", "All")
 	end
 })
 
@@ -326,7 +330,7 @@ local MyButton = Page1.Button({
 	Text = "Porn Hub",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("Po{{asdasdasd:rn}} Hub. ng", "All")
 	end
 })
 
@@ -335,15 +339,7 @@ local MyButton = Page1.Button({
 	Text = "Visit Porn Hub to get free bobux",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
-	end
-})
-
-local MyButton = Page1.Button({
-	Text = "Nice vagina",
-	Callback = function()
-		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("Visit Po{{asdasdasd:rn}} Hub to get free bobux. ng", "All")
 	end
 })
 
@@ -351,7 +347,7 @@ local MyButton = Page1.Button({
 	Text = "Cum",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("Cu{{asdasdasd:m}}. ng", "All")
 	end
 })
 
@@ -359,7 +355,7 @@ local MyButton = Page1.Button({
 	Text = "LMAO",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("L{{asdasdasd:MAO}}! ng", "All")
 	end
 })
 
@@ -367,90 +363,110 @@ local MyButton = Page1.Button({
 	Text = "LMFAO",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer(". ng", "All")
+		Remote:FireServer("LM{{asdasdasd:FAO}}! ng", "All")
 	end
 })
 
 local MyButton = Page1.Button({
 	Text = "Arse",
 	Callback = function()
-		Remote:FireServer(". ng", "All")
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Ar{{asdasdasd:se}}. ng", "All")
 	end
 })
 
 local MyButton = Page1.Button({
 	Text = "Arsebadger",
 	Callback = function()
-		Remote:FireServer(". ng", "All")
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Ars{{asdasdasd:ebadger}}. ng", "All")
 	end
 })
 
 local MyButton = Page1.Button({
 	Text = "Fanny",
 	Callback = function()
-		Remote:FireServer(". ng", "All")
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Fan{{asdasdasd:ny}}. ng", "All")
 	end
 })
 
 local MyButton = Page1.Button({
 	Text = "Horny",
 	Callback = function()
-		Remote:FireServer(". ng", "All")
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("H{{asdasdasd:orny}}. ng", "All")
 	end
 })
 
 local MyButton = Page1.Button({
 	Text = "Fuckwit",
 	Callback = function()
-		Remote:FireServer(". ng", "All")
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Fvc{{asdasdasd:kwit}}. ng", "All")
 	end
 })
 
 local MyButton = Page1.Button({
 	Text = "Boob",
 	Callback = function()
-		Remote:FireServer(". ng", "All")
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Boo{{asdasdasd:b}}. ng", "All")
 	end
 })
 
 local MyButton = Page1.Button({
 	Text = "Boobs",
 	Callback = function()
-		Remote:FireServer(". ng", "All")
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Boo{{asdasdasd:bs}}. ng", "All")
 	end
 })
 
 local MyButton = Page1.Button({
 	Text = "Shag",
 	Callback = function()
-		Remote:FireServer(". ng", "All")
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Sh{{asdasdasd:ag}}. ng", "All")
+	end
+})
+
+local MyButton = Page1.Button({
+	Text = "Nice vagina",
+	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Nice va{{asdasdasd:gina}}. ng", "All")
 	end
 })
 
 local MyButton = Page1.Button({
 	Text = "Pussy",
 	Callback = function()
-		Remote:FireServer(". ng", "All")
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Pussy. ng", "All")
 	end
 })
 
 local MyButton = Page1.Button({
 	Text = "Cunt",
 	Callback = function()
-		Remote:FireServer(". ng", "All")
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Cu{{asdasdasd:nt}}. ng", "All")
 	end
 })
 
 local MyButton = Page1.Button({
 	Text = "Slut",
 	Callback = function()
-		Remote:FireServer(". ng", "All")
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Sl{{asdasdasd:ut}}. ng", "All")
 	end
 })
 
 local MyButton = Page1.Button({
 	Text = "Kike",
 	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
 		Remote:FireServer(". ng", "All")
 	end
 })
@@ -458,6 +474,7 @@ local MyButton = Page1.Button({
 local MyButton = Page1.Button({
 	Text = "Cock",
 	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
 		Remote:FireServer(". ng", "All")
 	end
 })
@@ -465,6 +482,7 @@ local MyButton = Page1.Button({
 local MyButton = Page1.Button({
 	Text = "Ass",
 	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
 		Remote:FireServer(". ng", "All")
 	end
 })
@@ -472,6 +490,7 @@ local MyButton = Page1.Button({
 local MyButton = Page1.Button({
 	Text = "Asshole",
 	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
 		Remote:FireServer(". ng", "All")
 	end
 })
@@ -479,6 +498,7 @@ local MyButton = Page1.Button({
 local MyButton = Page1.Button({
 	Text = "Faggot",
 	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
 		Remote:FireServer(". ng", "All")
 	end
 })
@@ -486,6 +506,7 @@ local MyButton = Page1.Button({
 local MyButton = Page1.Button({
 	Text = "Queer",
 	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
 		Remote:FireServer(". ng", "All")
 	end
 })
@@ -493,6 +514,7 @@ local MyButton = Page1.Button({
 local MyButton = Page1.Button({
 	Text = "Penis",
 	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
 		Remote:FireServer(". ng", "All")
 	end
 })
@@ -500,6 +522,7 @@ local MyButton = Page1.Button({
 local MyButton = Page1.Button({
 	Text = "Sperm",
 	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
 		Remote:FireServer(". ng", "All")
 	end
 })
@@ -507,6 +530,7 @@ local MyButton = Page1.Button({
 local MyButton = Page1.Button({
 	Text = "Whore",
 	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
 		Remote:FireServer(". ng", "All")
 	end
 })
@@ -514,6 +538,7 @@ local MyButton = Page1.Button({
 local MyButton = Page1.Button({
 	Text = "Naked",
 	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
 		Remote:FireServer(". ng", "All")
 	end
 })
@@ -521,14 +546,24 @@ local MyButton = Page1.Button({
 local MyButton = Page1.Button({
 	Text = "Dyke",
 	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
 		Remote:FireServer(". ng", "All")
+	end
+})
+
+local MyButton = Page1.Button({
+	Text = "Smack to your own ass",
+	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Smack to your own as{{asdasdasd:s}}. ng", "All")
 	end
 })
 
 local MyButton = Page1.Button({
 	Text = "Dating",
 	Callback = function()
-		Remote:FireServer(". ng", "All")
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		Remote:FireServer("Dat{{asdasdasd:ing}}. ng", "All")
 	end
 })
 
@@ -540,5 +575,37 @@ local MyToggle = Page2.Toggle({
 		else
 			getgenv().CB_AutoBypass = false
 		end
+	end
+})
+
+local MyTextField = Page3.TextField({
+	Text = "Kaid#0001's Chat Bypass",
+	Callback = function(a)
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+
+		local Message= a
+
+		math.randomseed(tick())
+		local ChatMain = require(game:GetService("Players").LocalPlayer.PlayerScripts.ChatScript.ChatMain)
+
+		local function bypass()
+			ChatMain.MessagePosted:fire("dffhdfshfd"..math.random(100000,1000000))
+			ChatMain.MessagesChanged:fire(math.random(100000,1000000))
+		end
+
+		for v in Message:gmatch"." do
+			wait(.5)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(v, "All")
+			wait(.5)
+			bypass()
+		end
+	end
+})
+
+local MyButton = Page1.Button({
+	Text = "Shed's Bypasser",
+	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
 	end
 })
