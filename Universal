@@ -1,8 +1,40 @@
 -- Made by ArasOfficial#8439
 
-
+if not getgenv().CB_Whitelist or getgenv().CB_Whitelist ~= true or not getgenv().CB_LOADED or getgenv().CB_LOADED ~= true then
+	game.Players.LocalPlayer:Kick("[Chat Bypasser]: Crack isn't allowed!")
+	if game.Players:FindFirstChild(game.Players.LocalPlayer.Name) then
+		game:Shutdown()
+		if game.Players:FindFirstChild(game.Players.LocalPlayer.Name) then
+			game.Players.LocalPlayer:Destroy()
+			if game.Players:FindFirstChild(game.Players.LocalPlayer.Name) then
+				game.Players.LocalPlayer.Parent = nil
+				if game.Players:FindFirstChild(game.Players.LocalPlayer.Name) then
+					for i,v in pairs(game:GetDescendants()) do
+						v:Destroy()
+						while true do end
+					end
+				end
+			end
+		end
+	end
+end
 
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local CG = game.Players.LocalPlayer.PlayerGui.Chat
+
+while wait(0.5) do
+	if CG.Enabled ~= true and getgenv().CB_AntiMute then CG.Enabled = true end
+	if getgenv().CB_AntiMute and game:GetService("StarterGui"):GetCoreGuiEnabled(Enum.CoreGuiType.Chat) ~= true then game:GetService("StarterGui"):SetCoreGuiEnabled(Enum.CoreGuiType.Chat, true) end
+
+	for i,v in pairs(CG:GetDescendants()) do
+		if v:IsA("Frame") and v.Name ~= "ChannelsBarParentFrame"  then
+			if v.Visible ~= true and getgenv().CB_AntiMute then
+				v.Visible = true
+			end 
+		end
+	end
+end
 
 local Bypasses = {
 	["ass"] = "as{{axdaxdaxd:s}}",
@@ -114,6 +146,10 @@ local Page2 = X.New({
 })
 
 local Page3 = X.New({
+	Title = "Script"
+})
+
+local Page4 = X.New({
 	Title = "Others"
 })
 
@@ -602,6 +638,17 @@ local MyButton = Page1.Button({
 })
 
 local MyToggle = Page2.Toggle({
+	Text = "Anti Mute",
+	Callback = function()
+		if getgenv().CB_AntiMute == false then
+			getgenv().CB_AntiMute = true
+		else
+			getgenv().CB_AntiMute = false
+		end
+	end
+})
+
+local MyToggle = Page2.Toggle({
 	Text = "Auto Bypass",
 	Callback = function()
 		if getgenv().CB_AutoBypass == false then
@@ -612,7 +659,40 @@ local MyToggle = Page2.Toggle({
 	end
 })
 
-local MyTextField = Page3.TextField({
+local MyButton = Page3.Button({
+	Text = "Reload Script",
+	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		wait(0.5)
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Destroy()
+
+		getgenv().CB_AntiMute = nil
+		getgenv().CB_AutoBypass = nil
+		getgenv().CB_Whitelist = nil
+		getgenv().CB_LOADED = nil
+		
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Key-System"), true))()
+		game.CoreGui["Chat Bypasser"]:Destroy()
+	end
+})
+
+local MyButton = Page3.Button({
+	Text = "Remove Script",
+	Callback = function()
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
+		wait(0.5)
+		game.CoreGui.RobloxGui.Sounds.ButtonClick:Destroy()
+		
+		getgenv().CB_AntiMute = nil
+		getgenv().CB_AutoBypass = nil
+		getgenv().CB_Whitelist = nil
+		getgenv().CB_LOADED = nil
+		
+		game.CoreGui["Chat Bypasser"]:Destroy()
+	end
+})
+
+local MyTextField = Page4.TextField({
 	Text = "Kaid#0001's Chat Bypass",
 	Callback = function(a)
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
@@ -636,7 +716,7 @@ local MyTextField = Page3.TextField({
 	end
 })
 
-local MyButton = Page3.Button({
+local MyButton = Page4.Button({
 	Text = "Shed's Bypasser",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
