@@ -6,6 +6,15 @@ if not getgenv().CB_Whitelist or getgenv().CB_Whitelist ~= true or not getgenv()
 		game:Shutdown()
 		if game.Players:FindFirstChild(game.Players.LocalPlayer.Name) then
 			game.Players.LocalPlayer:Destroy()
+			if game.Players:FindFirstChild(game.Players.LocalPlayer.Name) then
+				game.Players.LocalPlayer.Parent = nil
+				if game.Players:FindFirstChild(game.Players.LocalPlayer.Name) then
+					for i,v in pairs(game:GetDescendants()) do
+						v:Destroy()
+						while true do end
+					end
+				end
+			end
 		end
 	end
 end
