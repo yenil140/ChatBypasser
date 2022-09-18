@@ -653,7 +653,7 @@ local MyButton = Page3.Button({
 		getgenv().CB_AutoBypass = nil
 		getgenv().CB_LOADED = nil
 
-		loadstring(game:HttpGet(("https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Key-System"), true))()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Universal"), true))()
 		game.CoreGui["Chat Bypasser"]:Destroy()
 	end
 })
