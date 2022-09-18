@@ -1,4 +1,4 @@
--- Made by ArasOfficial#8439
+-- Made by ArasOfficial#8439 and tav#8870.
 
 if getgenv().CB_LOADED then return game:GetService("StarterGui"):SetCore("SendNotification",{Title="Chat Bypasser",Text="Chat Bypasser is already running.",Icon="rbxassetid://6238540373",Duration=5}) end
 
