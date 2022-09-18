@@ -701,7 +701,7 @@ local MyButton = Page4.Button({
 	Text = "Shed's Bypasser",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+		loadstring(game:HttpGet("https://the-shed.dev/scripts/sbp.lua", true))()
 	end
 })
 
