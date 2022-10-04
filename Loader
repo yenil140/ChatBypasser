@@ -1,0 +1,87 @@
+-- Made by ArasOfficial8439
+
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+getgenv().CB_LU = true -- Loadstring Used (LU)
+
+local X = Material.Load({
+	Title = "Chat Bypasser",
+	Style = 1,
+	SizeX = 275,
+	SizeY = 275,
+	Theme = "Dark",
+})
+
+local Page1 = X.New({
+	Title = "General Settings"
+})
+
+local MyDropdown = Page1.Dropdown({
+	Text = "Chat Type",
+	Callback = function(Value)
+		getgenv().CB_ChatType = Value
+	end,
+
+	Options = {
+		"Default",
+		"Custom"
+	}
+})
+
+local MyDropdown = Page1.Dropdown({
+	Text = "Symbol",
+	Callback = function(Value)
+		getgenv().CB_Symbol = Value
+	end,
+	
+	-- SEϰY ╭8
+	
+	Options = {
+		"pp [RECOMMENDED]",
+		"pis",
+		"uck",
+		"cnt",
+		"cck",
+		"ASX",
+		"ÆSS",
+		"AESS",
+		"etard",
+		"sshol",
+		"ngaar",
+		"nxg",
+		"ng [PATCHED]"
+	}
+})
+
+local MyButton = Page1.Button({
+	Text = "Execute",
+	Callback = function()
+		if getgenv().CB_ChatType ~= "Default" then
+			local X = Material.Load({
+				Title = "Chat Bypasser",
+				Style = 1,
+				SizeX = 275,
+				SizeY = 275,
+				Theme = "Dark",
+			})
+			
+			local Page1 = X.New({
+				Title = "General Settings"
+			})
+			
+			local MyTextField = Page1.TextField({
+				Text = "Custom Chat's RemoteEvent",
+				Callback = function(Value)
+					getgenv().CB_RemoteEvent = Value
+				end
+			})
+			
+			local MyButton = Page1.Button({
+				Text = "Execute",
+				Callback = function()
+					loadstring(game:HttpGet(("https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Universal"), true))()
+				end
+			})
+		end
+	end
+})
