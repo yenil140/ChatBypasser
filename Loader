@@ -37,7 +37,13 @@ local MyDropdown = Page1.Dropdown({
 local MyDropdown = Page1.Dropdown({
 	Text = "Symbol",
 	Callback = function(Value)
-		getgenv().CB_Symbol = Value
+		if Value == "pp [RECOMMENDED]" then
+			getgenv().CB_Symbol = "pp"
+		elseif Value == "ng [PATCHED]" then
+			game.Players.LocalPlayer:Kick('[Chat Bypasser]: Symbol "ng" is patched.')
+		else
+			getgenv().CB_Symbol = Value
+		end
 	end,
 
 	-- SEϰY ╭8
