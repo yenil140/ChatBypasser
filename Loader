@@ -37,8 +37,12 @@ local MyDropdown = Page1.Dropdown({
 local MyDropdown = Page1.Dropdown({
 	Text = "Symbol",
 	Callback = function(Value)
-		if Value == "pp [RECOMMENDED]" then
+		if Value == "az [RECOMMENDED]" then
+			getgenv().CB_Symbol = "az"
+		elseif Value == "pp [RECOMMENDED]" then
 			getgenv().CB_Symbol = "pp"
+		elseif Value == "fn [RECOMMENDED]" then
+			getgenv().CB_Symbol = "fn"
 		elseif Value == "ng [PATCHED]" then
 			game.Players.LocalPlayer:Kick('[Chat Bypasser]: Symbol "ng" is patched.')
 		else
@@ -49,7 +53,10 @@ local MyDropdown = Page1.Dropdown({
 	-- SEϰY ╭8
 
 	Options = {
+		"az [RECOMMENDED]",
 		"pp [RECOMMENDED]",
+		"fn [RECOMMENDED]",
+		"fck",
 		"pis",
 		"uck",
 		"cnt",
@@ -57,6 +64,9 @@ local MyDropdown = Page1.Dropdown({
 		"ASX",
 		"ÆSS",
 		"AESS",
+		"disc",
+		"aggi",
+		"cord",
 		"etard",
 		"sshol",
 		"ngaar",
