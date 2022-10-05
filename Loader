@@ -5,9 +5,9 @@ local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinl
 if getgenv().CB_LOADED then return game:GetService("StarterGui"):SetCore("SendNotification",{Title="Chat Bypasser",Text="Chat Bypasser is already running.",Icon="rbxassetid://6238540373",Duration=5}) end
 
 if pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Version'))() end) then
-    if Version == "PATCHED" then
-        return game.Players.LocalPlayer:Kick("[Chat Bypasser]: PATCHED!")
-    end
+	if Version == "PATCHED" then
+		return game.Players.LocalPlayer:Kick("[Chat Bypasser]: PATCHED!")
+	end
 end
 
 local X = Material.Load({
@@ -39,9 +39,9 @@ local MyDropdown = Page1.Dropdown({
 	Callback = function(Value)
 		getgenv().CB_Symbol = Value
 	end,
-	
+
 	-- SEϰY ╭8
-	
+
 	Options = {
 		"pp [RECOMMENDED]",
 		"pis",
@@ -70,24 +70,26 @@ local MyButton = Page1.Button({
 				SizeY = 275,
 				Theme = "Dark",
 			})
-			
+
 			local Page1 = X.New({
 				Title = "General Settings"
 			})
-			
+
 			local MyTextField = Page1.TextField({
 				Text = "Custom Chat's RemoteEvent",
 				Callback = function(Value)
 					getgenv().CB_RemoteEvent = Value
 				end
 			})
-			
+
 			local MyButton = Page1.Button({
 				Text = "Execute",
 				Callback = function()
 					loadstring(game:HttpGet(("https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Universal"), true))()
 				end
 			})
+		else
+			loadstring(game:HttpGet(("https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Universal"), true))()
 		end
 	end
 })
