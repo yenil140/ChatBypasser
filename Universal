@@ -3,9 +3,9 @@
 if getgenv().CB_LOADED then return game:GetService("StarterGui"):SetCore("SendNotification",{Title="Chat Bypasser",Text="Chat Bypasser is already running.",Icon="rbxassetid://6238540373",Duration=5}) end
 
 if pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Version'))() end) then
-    if Version == "PATCHED" then
-        return game.Players.LocalPlayer:Kick("[Chat Bypasser]: PATCHED!")
-    end
+	if Version == "PATCHED" then
+		return game.Players.LocalPlayer:Kick("[Chat Bypasser]: PATCHED!")
+	end
 end
 
 getgenv().CB_LOADED = true
@@ -76,8 +76,13 @@ local Bypasses = {
 	["smack"] = "sm{{asdasdasd:ack}}"
 }
 
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local Remote = ReplicatedStorage:FindFirstChild("SayMessageRequest", true)
+local Remote = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents"):FindFirstChild("SayMessageRequest")
+
+if getgenv().CB_ChatType ~= "Default" then
+	Remote = getgenv().CB_RemoteEvent
+elseif not game:GetService("ReplicatedStorage"):FindFirstChild("SayMessageRequest", true) then
+	game.Players.LocalPlayer:Kick("[Chat Bypasser]: Error!")
+end
 
 local ChatBypass; ChatBypass = hookmetamethod(Remote, "__namecall", function(self, ...)
 	local Method = getnamecallmethod()
