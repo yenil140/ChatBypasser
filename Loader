@@ -2,7 +2,13 @@
 
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
-getgenv().CB_LU = true -- Loadstring Used (LU)
+if getgenv().CB_LOADED then return game:GetService("StarterGui"):SetCore("SendNotification",{Title="Chat Bypasser",Text="Chat Bypasser is already running.",Icon="rbxassetid://6238540373",Duration=5}) end
+
+if pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Version'))() end) then
+    if Version == "PATCHED" then
+        return game.Players.LocalPlayer:Kick("[Chat Bypasser]: PATCHED!")
+    end
+end
 
 local X = Material.Load({
 	Title = "Chat Bypasser",
