@@ -78,10 +78,12 @@ local Bypasses = {
 
 local Remote = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents"):FindFirstChild("SayMessageRequest")
 
-if getgenv().CB_ChatType ~= "Default" then
-	Remote = getgenv().CB_RemoteEvent
-elseif not game:GetService("ReplicatedStorage"):FindFirstChild("SayMessageRequest", true) then
-	game.Players.LocalPlayer:Kick("[Chat Bypasser]: Error!")
+if getgenv().CB_ChatType ~= nil then
+	if getgenv().CB_ChatType ~= "Default" then
+		Remote = getgenv().CB_RemoteEvent
+	elseif not game:GetService("ReplicatedStorage"):FindFirstChild("SayMessageRequest", true) then
+		game.Players.LocalPlayer:Kick("[Chat Bypasser]: RemoteEvent not found! Use custom chat.")
+	end	
 end
 
 local ChatBypass; ChatBypass = hookmetamethod(Remote, "__namecall", function(self, ...)
