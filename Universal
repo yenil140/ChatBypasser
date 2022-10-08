@@ -655,6 +655,7 @@ local MyButton = Page3.Button({
 		getgenv().CB_ChatType = nil
 		getgenv().CB_AntiMute = nil
 		getgenv().CB_AutoBypass = nil
+		getgenv().CB_LU = nil
 		getgenv().CB_LOADED = nil
 
 		loadstring(game:HttpGet(("https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Universal"), true))()
@@ -668,12 +669,13 @@ local MyButton = Page3.Button({
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
 		wait(0.5)
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Destroy()
-
+		
 		getgenv().CB_Symbol = nil
 		getgenv().CB_Bytecode = nil
 		getgenv().CB_ChatType = nil
 		getgenv().CB_AntiMute = nil
 		getgenv().CB_AutoBypass = nil
+		getgenv().CB_LU = nil
 		getgenv().CB_LOADED = nil
 
 		game.CoreGui["Chat Bypasser"]:Destroy()
