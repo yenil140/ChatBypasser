@@ -655,7 +655,6 @@ local MyButton = Page3.Button({
 		getgenv().CB_ChatType = nil
 		getgenv().CB_AntiMute = nil
 		getgenv().CB_AutoBypass = nil
-		getgenv().CB_LU = nil
 		getgenv().CB_LOADED = nil
 
 		loadstring(game:HttpGet(("https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Universal"), true))()
