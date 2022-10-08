@@ -1,5 +1,7 @@
 -- Made by ArasOfficial#8439 and tav#8870.
 
+
+if getgenv().CB_LU ~= true then return loadstring(game:HttpGet(("https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Loader"), true))() end
 if getgenv().CB_LOADED then return game:GetService("StarterGui"):SetCore("SendNotification",{Title="Chat Bypasser",Text="Chat Bypasser is already running.",Icon="rbxassetid://6238540373",Duration=5}) end
 
 if pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Version'))() end) then
@@ -147,7 +149,7 @@ local MyButton = Page1.Button({
 	Text = "Fuck",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Fu{{asdasdasd:ck}}! ng", "All")
+		Remote:FireServer(("Fu{{%s:ck}}! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -155,7 +157,7 @@ local MyButton = Page1.Button({
 	Text = "Fucking",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Fvc{{asdasdasd:king}}... ng", "All")
+		Remote:FireServer(("Fvc{{%s:king}}... " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -163,7 +165,7 @@ local MyButton = Page1.Button({
 	Text = "Fucked",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Fu{{asdasdasd:cked}}. ng", "All")
+		Remote:FireServer(("Fu{{%s:cked}}! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -173,7 +175,7 @@ local MyButton = Page1.Button({
 	Text = "Fuck You",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Fu{{asdasdasd:ck}} You! ng", "All")
+		Remote:FireServer(("Fu{{%s:ck}} You! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -181,7 +183,7 @@ local MyButton = Page1.Button({
 	Text = "Rape",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Ra{{asdasdasd:pe}}. ng", "All")
+		Remote:FireServer(("Ra{{%s:pe}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -189,7 +191,7 @@ local MyButton = Page1.Button({
 	Text = "I'll rape you",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("I'll ra{{asdasdasd:pe}} you. ng", "All")
+		Remote:FireServer(("I'll ra{{%s:pe}} you. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -197,7 +199,7 @@ local MyButton = Page1.Button({
 	Text = "I'll rape your mom",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("I'll ra{{asdasdasd:pe}} your mom. ng", "All")
+		Remote:FireServer(("I'll ra{{%s:pe}} your mom. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -205,7 +207,7 @@ local MyButton = Page1.Button({
 	Text = "Bitch",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Bit{{asdasdasd:ch}}! ng", "All")
+		Remote:FireServer(("Bit{{%s:ch}}! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -213,15 +215,7 @@ local MyButton = Page1.Button({
 	Text = "Bitches",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Bit{{asdasdasd:ches}}! ng", "All")
-	end
-})
-
-local MyButton = Page1.Button({
-	Text = "Fuck You",
-	Callback = function()
-		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Fu{{asdasdasd:ck}} You! ng", "All")
+		Remote:FireServer(("Bit{{%s:ches}}! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -229,7 +223,7 @@ local MyButton = Page1.Button({
 	Text = "Be my wife",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Be my w{{asdasdasd:ife}}! ng", "All")
+		Remote:FireServer(("Be my w{{%s:ife}}! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -237,7 +231,7 @@ local MyButton = Page1.Button({
 	Text = "Nigga",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Ni{{asdasdasd:gga}}. ng", "All")
+		Remote:FireServer(("Ni{{%s:gga}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -245,7 +239,7 @@ local MyButton = Page1.Button({
 	Text = "Nigger",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Ni{{asdasdasd:gger}}. ng", "All")
+		Remote:FireServer(("Ni{{%s:gger}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -253,7 +247,7 @@ local MyButton = Page1.Button({
 	Text = "Niggers",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Ni{{asdasdasd:ggers}}. ng", "All")
+		Remote:FireServer(("Ni{{%s:ggers}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -261,7 +255,7 @@ local MyButton = Page1.Button({
 	Text = "Piss",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("P{{asdasdasd:iss}}. ng", "All")
+		Remote:FireServer(("Pi{{%s:ss}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -269,7 +263,7 @@ local MyButton = Page1.Button({
 	Text = "Go down. I will piss to your face.",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Go down. I will p{{axdaxdaxd:iss}} to your face. ng", "All")
+		Remote:FireServer(("Go down. I will pi{{%s:ss}} to your face. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -277,7 +271,7 @@ local MyButton = Page1.Button({
 	Text = "Bastard",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Bastar{{asdasdasd:d}}. ng", "All")
+		Remote:FireServer(("Bastar{{%s:d}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -285,7 +279,7 @@ local MyButton = Page1.Button({
 	Text = "Discord",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Disco{{asdasdasd:rd}}. ng", "All")
+		Remote:FireServer(("Disco{{%s:rd}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -293,7 +287,7 @@ local MyButton = Page1.Button({
 	Text = "Shit",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Sh{{asdasdasd:it}}! ng", "All")
+		Remote:FireServer(("Sh{{%s:it}}! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -301,7 +295,7 @@ local MyButton = Page1.Button({
 	Text = "Shitty",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Sh{{asdasdasd:itty}}! ng", "All")
+		Remote:FireServer(("Sh{{%s:itty}}! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -309,16 +303,16 @@ local MyButton = Page1.Button({
 	Text = "Shitmagnet",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Sh{{asdasdasd:itmagnet}}. ng", "All")
+		Remote:FireServer(("Sh{{%s:itmagnet}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
 
 local MyButton = Page1.Button({
-	Text = "Wtf",
+	Text = "WTF",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("W{{asdasdasd:tf}}!? ng", "All")
+		Remote:FireServer(("W{{%s:TF}}!? " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -326,7 +320,7 @@ local MyButton = Page1.Button({
 	Text = "Sex",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Se{{asdasdasd:x}}. ng", "All")
+		Remote:FireServer(("Se{{%s:x}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -334,7 +328,7 @@ local MyButton = Page1.Button({
 	Text = "Sexual",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Se{{asdasdasd:xual}}. ng", "All")
+		Remote:FireServer(("S{{%s:exual}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -342,7 +336,7 @@ local MyButton = Page1.Button({
 	Text = "Gay",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("G{{axdaxdaxd:ay}}. ng", "All")
+		Remote:FireServer(("G{{%s:ay.}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -350,7 +344,7 @@ local MyButton = Page1.Button({
 	Text = "Fuck Roblox",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Fu{{asdasdasd:ck}} Roblox! ng", "All")
+		Remote:FireServer(("Fu{{%s:ck}} Roblox! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -358,7 +352,7 @@ local MyButton = Page1.Button({
 	Text = "Gaylord",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Gayl{{asdasdasd:ord}}. ng", "All")
+		Remote:FireServer(("G{{%s:aylord}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -366,7 +360,7 @@ local MyButton = Page1.Button({
 	Text = "Hitler",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Hit{{asdasdasd:ler}}. ng", "All")
+		Remote:FireServer(("Hit{{%s:ler}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -374,7 +368,7 @@ local MyButton = Page1.Button({
 	Text = "Porn",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Po{{asdasdasd:rn}}. ng", "All")
+		Remote:FireServer(("Po{{%s:rn}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -382,7 +376,7 @@ local MyButton = Page1.Button({
 	Text = "Porn Hub",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Po{{asdasdasd:rn}} Hub. ng", "All")
+		Remote:FireServer(("Po{{%s:rn}} Hub. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -391,7 +385,7 @@ local MyButton = Page1.Button({
 	Text = "Visit Porn Hub to get free bobux",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Visit Po{{asdasdasd:rn}} Hub to get free bobux. ng", "All")
+		Remote:FireServer(("Visit Po{{%s:rn}} Hub to get free bobux! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -399,7 +393,7 @@ local MyButton = Page1.Button({
 	Text = "Cum",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Cu{{asdasdasd:m}}. ng", "All")
+		Remote:FireServer(("Cu{{%s:m}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -407,7 +401,7 @@ local MyButton = Page1.Button({
 	Text = "LMAO",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("L{{asdasdasd:MAO}}! ng", "All")
+		Remote:FireServer(("L{{%s:MAO}}! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -415,7 +409,7 @@ local MyButton = Page1.Button({
 	Text = "LMFAO",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("LM{{asdasdasd:FAO}}! ng", "All")
+		Remote:FireServer(("LM{{%s:FAO}}! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -423,7 +417,7 @@ local MyButton = Page1.Button({
 	Text = "Arse",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Ar{{asdasdasd:se}}. ng", "All")
+		Remote:FireServer(("Ar{{%s:se}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -431,7 +425,7 @@ local MyButton = Page1.Button({
 	Text = "Arsebadger",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Ars{{asdasdasd:ebadger}}. ng", "All")
+		Remote:FireServer(("Ars{{%s:ebadger}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -439,7 +433,7 @@ local MyButton = Page1.Button({
 	Text = "Fanny",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Fan{{asdasdasd:ny}}. ng", "All")
+		Remote:FireServer(("Fan{{%s:ny}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -447,7 +441,7 @@ local MyButton = Page1.Button({
 	Text = "Horny",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("H{{asdasdasd:orny}}. ng", "All")
+		Remote:FireServer(("H{{%s:orny}}! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -455,7 +449,7 @@ local MyButton = Page1.Button({
 	Text = "Fuckwit",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Fvc{{asdasdasd:kwit}}. ng", "All")
+		Remote:FireServer(("Fvc{{%s:kwit}}! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -463,7 +457,7 @@ local MyButton = Page1.Button({
 	Text = "Boob",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Boo{{asdasdasd:b}}. ng", "All")
+		Remote:FireServer(("Boo{{%s:b}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -471,7 +465,7 @@ local MyButton = Page1.Button({
 	Text = "Boobs",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Boo{{asdasdasd:bs}}. ng", "All")
+		Remote:FireServer(("Boo{{%s:bs}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -479,7 +473,7 @@ local MyButton = Page1.Button({
 	Text = "Shag",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Sh{{asdasdasd:ag}}. ng", "All")
+		Remote:FireServer(("Sh{{%s:ag}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -487,7 +481,7 @@ local MyButton = Page1.Button({
 	Text = "Nice vagina",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Nice va{{asdasdasd:gina}}. ng", "All")
+		Remote:FireServer(("Nice va{{%s:gina}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -495,7 +489,7 @@ local MyButton = Page1.Button({
 	Text = "Pussy",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Pussy. ng", "All")
+		Remote:FireServer(("Pu{{%s:ssy}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -503,7 +497,7 @@ local MyButton = Page1.Button({
 	Text = "Cunt",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Cu{{asdasdasd:nt}}. ng", "All")
+		Remote:FireServer(("Cu{{%s:nt}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -511,7 +505,7 @@ local MyButton = Page1.Button({
 	Text = "Slut",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Sl{{asdasdasd:ut}}. ng", "All")
+		Remote:FireServer(("Sl{{%s:ut}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -519,7 +513,7 @@ local MyButton = Page1.Button({
 	Text = "Kike",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Ki{{asdasdasd:ke}}. ng", "All")
+		Remote:FireServer(("Ki{{%s:ke}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -527,7 +521,7 @@ local MyButton = Page1.Button({
 	Text = "Kys",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("K{{asdasdasd:ys}}. ng", "All")
+		Remote:FireServer(("Ky{{%s:s}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -535,7 +529,7 @@ local MyButton = Page1.Button({
 	Text = "Cock",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Co{{asdasdasd:ck}}. ng", "All")
+		Remote:FireServer(("Co{{%s:ck}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -543,7 +537,7 @@ local MyButton = Page1.Button({
 	Text = "Ass",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("as{{axdaxdaxd:s}}. ng", "All")
+		Remote:FireServer(("A{{%s:ss}}! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -551,7 +545,7 @@ local MyButton = Page1.Button({
 	Text = "Asshole",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("As{{asdasdasd:shole}}. ng", "All")
+		Remote:FireServer(("As{{%s:shole}}! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -559,7 +553,7 @@ local MyButton = Page1.Button({
 	Text = "Faggot",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Fa{{asdasdasd:ggot}}. ng", "All")
+		Remote:FireServer(("Fa{{%s:ggot}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -567,7 +561,7 @@ local MyButton = Page1.Button({
 	Text = "Queer",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Qu{{asdasdasd:eer}}. ng", "All")
+		Remote:FireServer(("Qu{{%s:eer}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -575,7 +569,7 @@ local MyButton = Page1.Button({
 	Text = "Penis",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Pe{{asdasdasd:nis}}. ng", "All")
+		Remote:FireServer(("Pe{{%s:nis}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -583,7 +577,7 @@ local MyButton = Page1.Button({
 	Text = "Sperm",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Sper{{asdasdasd:m}}. ng", "All")
+		Remote:FireServer(("Sper{{%s:m}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -591,7 +585,7 @@ local MyButton = Page1.Button({
 	Text = "Whore",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Who{{asdasdasd:re}}. ng", "All")
+		Remote:FireServer(("Who{{%s:re}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -599,7 +593,7 @@ local MyButton = Page1.Button({
 	Text = "Naked",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Na{{asdasdasd:ked}}. ng", "All")
+		Remote:FireServer(("Na{{%s:ked}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -607,7 +601,7 @@ local MyButton = Page1.Button({
 	Text = "Dyke",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Dy{{asdasdasd:ke}}. ng", "All")
+		Remote:FireServer(("Dy{{%s:ke}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -615,7 +609,7 @@ local MyButton = Page1.Button({
 	Text = "Smack to your own ass",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Smack to your own as{{asdasdasd:s}}. ng", "All")
+		Remote:FireServer(("Smack to your own a{{%s:ss}}! " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -623,7 +617,7 @@ local MyButton = Page1.Button({
 	Text = "Dating",
 	Callback = function()
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
-		Remote:FireServer("Dat{{asdasdasd:ing}}. ng", "All")
+		Remote:FireServer(("Dat{{%s:ing}}. " .. getgenv().CB_Symbol):format(getgenv().CB_Bytecode), "All")
 	end
 })
 
@@ -655,7 +649,10 @@ local MyButton = Page3.Button({
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Play()
 		wait(0.5)
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Destroy()
-
+		
+		getgenv().CB_Symbol = nil
+		getgenv().CB_Bytecode = nil
+		getgenv().CB_ChatType = nil
 		getgenv().CB_AntiMute = nil
 		getgenv().CB_AutoBypass = nil
 		getgenv().CB_LOADED = nil
@@ -672,6 +669,9 @@ local MyButton = Page3.Button({
 		wait(0.5)
 		game.CoreGui.RobloxGui.Sounds.ButtonClick:Destroy()
 
+		getgenv().CB_Symbol = nil
+		getgenv().CB_Bytecode = nil
+		getgenv().CB_ChatType = nil
 		getgenv().CB_AntiMute = nil
 		getgenv().CB_AutoBypass = nil
 		getgenv().CB_LOADED = nil
