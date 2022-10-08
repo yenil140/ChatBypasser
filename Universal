@@ -102,10 +102,10 @@ local ChatBypass; ChatBypass = hookmetamethod(Remote, "__namecall", function(sel
 				if x:lower() == _ then
 					if x:upper() ~= x then
 						Message = Message:gsub(x, Bypass)
-						FinalMessage = Message .. " ng"
+						FinalMessage = Message .. getgenv().CB_Symbol
 					else
 						Message = Message:gsub(x, Bypass):upper()
-						FinalMessage = Message:gsub(x, Bypass):upper() .. " ng"
+						FinalMessage = Message:gsub(x, Bypass):upper() .. getgenv().CB_Symbol
 					end
 				end
 			end
