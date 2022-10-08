@@ -10,6 +10,8 @@ if pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/y
 	end
 end
 
+getgenv().CB_LU = true -- Loader Used (LU)
+
 local X = Material.Load({
 	Title = "Chat Bypasser",
 	Style = 1,
@@ -19,93 +21,133 @@ local X = Material.Load({
 })
 
 local Page1 = X.New({
-	Title = "General Settings"
-})
-
-local MyDropdown = Page1.Dropdown({
-	Text = "Chat Type",
-	Callback = function(Value)
-		getgenv().CB_ChatType = Value
-	end,
-
-	Options = {
-		"Default",
-		"Custom"
-	}
-})
-
-local MyDropdown = Page1.Dropdown({
-	Text = "Symbol",
-	Callback = function(Value)
-		if Value == "az [RECOMMENDED]" then
-			getgenv().CB_Symbol = "az"
-		elseif Value == "pp [RECOMMENDED]" then
-			getgenv().CB_Symbol = "pp"
-		elseif Value == "fn [RECOMMENDED]" then
-			getgenv().CB_Symbol = "fn"
-		elseif Value == "ng [PATCHED]" then
-			game.Players.LocalPlayer:Kick('[Chat Bypasser]: Symbol "ng" is patched.')
-		else
-			getgenv().CB_Symbol = Value
-		end
-	end,
-
-	-- SEϰY ╭8
-
-	Options = {
-		"az [RECOMMENDED]",
-		"pp [RECOMMENDED]",
-		"fn [RECOMMENDED]",
-		"fck",
-		"pis",
-		"uck",
-		"cnt",
-		"cck",
-		"ASX",
-		"ÆSS",
-		"AESS",
-		"disc",
-		"aggi",
-		"cord",
-		"etard",
-		"sshol",
-		"ngaar",
-		"nxg",
-		"ng [PATCHED]"
-	}
+	Title = "Loader"
 })
 
 local MyButton = Page1.Button({
-	Text = "Execute",
+	Text = "Default",
 	Callback = function()
-		if getgenv().CB_ChatType ~= "Default" then
-			local X = Material.Load({
-				Title = "Chat Bypasser",
-				Style = 1,
-				SizeX = 275,
-				SizeY = 275,
-				Theme = "Dark",
-			})
+		getgenv().CB_Symbol = "pp"
+		getgenv().CB_Bytecode = "asdasdasd"
+		getgenv().CB_ChatType = "Default"
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Universal"), true))()
+	end
+})
 
-			local Page1 = X.New({
-				Title = "General Settings"
-			})
+local MyButton = Page1.Button({
+	Text = "Custom",
+	Callback = function()
+		local X = Material.Load({
+			Title = "Chat Bypasser",
+			Style = 1,
+			SizeX = 275,
+			SizeY = 275,
+			Theme = "Dark",
+		})
 
-			local MyTextField = Page1.TextField({
-				Text = "Custom Chat's RemoteEvent",
-				Callback = function(Value)
-					getgenv().CB_RemoteEvent = Value
+		local Page1 = X.New({
+			Title = "Custom Settings"
+		})
+
+		local MyDropdown = Page1.Dropdown({
+			Text = "Chat Type",
+			Callback = function(Value)
+				getgenv().CB_ChatType = Value
+			end,
+
+			Options = {
+				"Default",
+				"Custom"
+			}
+		})
+
+		local MyDropdown = Page1.Dropdown({
+			Text = "Symbol",
+			Callback = function(Value)
+				if Value == "az [RECOMMENDED]" then
+					getgenv().CB_Symbol = "az"
+				elseif Value == "pp [RECOMMENDED]" then
+					getgenv().CB_Symbol = "pp"
+				elseif Value == "fn [RECOMMENDED]" then
+					getgenv().CB_Symbol = "fn"
+				elseif Value == "ng [PATCHED]" then
+					game.Players.LocalPlayer:Kick('[Chat Bypasser]: Symbol "ng" is patched.')
+				else
+					getgenv().CB_Symbol = Value
 				end
-			})
+			end,
 
-			local MyButton = Page1.Button({
-				Text = "Execute",
-				Callback = function()
+			-- SEϰY ╭8
+
+			Options = {
+				"az [RECOMMENDED]",
+				"pp [RECOMMENDED]",
+				"fn [RECOMMENDED]",
+				"fck",
+				"pis",
+				"uck",
+				"cnt",
+				"cck",
+				"ASX",
+				"ÆSS",
+				"AESS",
+				"disc",
+				"aggi",
+				"cord",
+				"etard",
+				"sshol",
+				"ngaar",
+				"nxg",
+				"ng [PATCHED]"
+			}
+		})
+		
+		local MyDropdown = Page1.Dropdown({
+			Text = "Bytecode",
+			Callback = function(Value)
+				getgenv().CB_Bytecode = Value
+			end,
+
+			Options = {
+				"asdasdasd",
+				"axdaxdaxd",
+				"aieixzvzx"
+			}
+		})
+
+		local MyButton = Page1.Button({
+			Text = "Execute",
+			Callback = function()
+				if getgenv().CB_ChatType ~= "Default" then
+					local X = Material.Load({
+						Title = "Chat Bypasser",
+						Style = 1,
+						SizeX = 275,
+						SizeY = 275,
+						Theme = "Dark",
+					})
+
+					local Page1 = X.New({
+						Title = "Custom Chat"
+					})
+
+					local MyTextField = Page1.TextField({
+						Text = "Custom Chat's RemoteEvent",
+						Callback = function(Value)
+							getgenv().CB_RemoteEvent = Value
+						end
+					})
+
+					local MyButton = Page1.Button({
+						Text = "Execute",
+						Callback = function()
+							loadstring(game:HttpGet(("https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Universal"), true))()
+						end
+					})
+				else
 					loadstring(game:HttpGet(("https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Universal"), true))()
 				end
-			})
-		else
-			loadstring(game:HttpGet(("https://raw.githubusercontent.com/yenil140/ChatBypasser/main/Universal"), true))()
-		end
+			end
+		})
 	end
 })
