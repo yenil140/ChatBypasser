@@ -1,5 +1,8 @@
 -- Made by ArasOfficial8439
 
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/legitimate0x1/ChatBypasser/main/Loader"), true))()
+
+--[[
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 if getgenv().CB_LOADED then return game:GetService("StarterGui"):SetCore("SendNotification",{Title="Chat Bypasser",Text="Chat Bypasser is already running.",Icon="rbxassetid://6238540373",Duration=5}) end
@@ -151,3 +154,4 @@ local MyButton = Page1.Button({
 		})
 	end
 })
+--]]
